@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    position: relative;
+    overflow: hidden; /* Para evitar rolagem */
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+    width: 5%;
+    min-width: 5%; /* Cada imagem ocupa 100% da largura do contêiner */
+}
+
+.counter {
+    color: rgb(162, 0, 226);
+    font-size: 2em;
+    position: absolute;
+    bottom: 20px; /* Ajuste a posição do contador */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.time {
+    margin: 10px 0;
+}
