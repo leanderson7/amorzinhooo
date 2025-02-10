@@ -5,9 +5,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #000000;
+    background-color: #8c00ff;
     position: relative;
-    overflow: hidden; /* Para evitar rolagem */
 }
 
 .container {
@@ -15,29 +14,16 @@ body {
     text-align: center;
 }
 
-.carousel {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.carousel-images {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.carousel-images img {
-    width: 5%;
-    min-width: 5%; /* Cada imagem ocupa 100% da largura do contêiner */
+.main-image {
+    width: 50%; /* Ajuste a largura da imagem conforme necessário */
+    max-width: 400px; /* Limite a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Espaço entre a imagem e o contador */
 }
 
 .counter {
-    color: rgb(162, 0, 226);
+    color: #000; /* Cor do texto do contador */
     font-size: 2em;
-    position: absolute;
-    bottom: 20px; /* Ajuste a posição do contador */
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .time {
